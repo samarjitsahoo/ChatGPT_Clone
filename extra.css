@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #202025;
+}
+textarea {
+    border-radius: 3rem;
+    background-color: transparent;
+    border: 2px solid gray;
+    width: 50vw;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chat-container {
+    padding: 10px 25%;
+}
+.fixed-bottom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background: #202025;
+}
+button img{
+    border: 2px solid #202025;
+    opacity: 0.5;
+    margin: auto;
+    
+}
+
+/* Media Queries */
+
+@media only screen and (max-width:426px) {
+    body {
+        font-size: small;
+    }
+
+    #second-main img {
+        max-width: 2rem;
+        max-height: 2rem;
+    }
+    #chat-container {
+        padding: 10px 10%;
+        margin-bottom: 15%;
+    }
+    #first-main img{
+        border-radius: 10px;
+        width: 45px;
+        height: auto;
+    }
+    
+    textarea {
+        width: 60vw;
+    }
+    button {
+        left: 4px;
+        height: 36px;
+    }
+    #second-main #chat-form button img {
+        width: 24px;
+        height: auto;
+      }
+    button img{
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width:375px) and (max-width:426px) {
+    button img {
+        margin: auto;
+        position: relative;
+        left: 5px;
+    }
+    #chat-container {
+        margin-bottom: 15%;
+    }
+}
+
+@media only screen and (min-width:426px) and (max-width:521px) {
+    body {
+        font-size: small;
+    }
+
+    #second-main img {
+        max-width: 2rem;
+        max-height: 2rem;
+    }
+    #first-main img{
+        border-radius: 10px;
+        width: 50px;
+        height: auto;
+    }
+    #redirectButton{
+        font-size: medium;
+    }
+
+    #chat-container {
+        padding: 10px 10%;
+        margin-bottom: 15%;
+    }
+
+
+    textarea {
+        width: 60vw;
+    }
+
+    button {
+        height: 36px;
+
+    }
+    #second-main #chat-form button img {
+        width: 24px;
+        height: auto;
+      }
+
+    button img {
+        margin: auto;
+        position: relative;
+        left: 3px;
+
+    }
+
+}
+
+@media only screen and (min-width:521px) and (max-width:769px) {
+    body {
+        font-size: small;
+    }
+
+    #second-main img {
+        max-width: 2rem;
+        max-height: 2rem;
+    }
+    #first-main img{
+        border-radius: 13px;
+        width: 55px;
+        height: auto;
+    }
+    #first-main #redirectButton{
+        height: 2rem;
+        font-size: medium;
+    }
+
+    #chat-container {
+        padding: 10px 10%;
+        margin-bottom: 10%;
+
+    }
+    #first-main #redirectButton {
+        height: 2.5rem;
+        font-size: x-large;
+    }
+    
+   
+    
+
+    textarea {
+        width: 60vw;
+    }
+
+    
+
+    button img {
+        margin: auto;
+        position: relative;
+        left: 3px;
+
+    }
+
+}
+
+@media only screen and (min-width:769px) and (max-width:1540px){
+    
+
+    #second-main img {
+        max-width: 2rem;
+        max-height: 2rem;
+    }
+
+    #first-main img{
+        border-radius: 15px;
+        width: 55px;
+        height: auto;
+    }
+    #first-main #redirectButton{
+        height: 2rem;
+        font-size: medium;
+    }
+
+    #chat-container {
+        padding: 10px 20%;
+        margin-bottom: 7%;
+    }
+    #first-main #redirectButton {
+        height: 2.5rem;
+        font-size: x-large;
+    }
+    button img {
+        margin: auto;
+        position: relative;
+        left: 3px;
+
+    }
+
+}
+@media only screen and (min-width:1540px){
+    #first-main img{
+        border-radius: 20px;
+        width: 120px;
+        height: auto;
+    }
+    #second-main img {
+        max-width: 4rem;
+        max-height: 4rem;
+    }
+    #first-main #redirectButton{
+        width: 10rem;
+        height: 3rem;
+    }
+    body {
+        font-size: x-large;
+    }
+}
