@@ -1,5 +1,11 @@
-# ChatGPT_Clone
+# ChatGPT Clone
 <div align="center">
 <img src="public/chatGPT.png" width="100" height="auto">
 </div>
-<p>Explore my ChatGPT Clone project, which stands as a testament to my dedication to advancing my skills in AI and modern web development. This project harnesses the power of the Gemini AI API to faithfully recreate the core functionalities of an AI-based conversational assistant. It serves as a dynamic platform where I delve into the intricacies of API integration, real-time data processing, and user experience design. The project offers a smooth and interactive interface for real-time conversations, delivering an intuitive and responsive experience that mirrors the capabilities of sophisticated AI systems. Each line of code is carefully crafted to push the boundaries of what's possible in conversational AI, with a focus on creating an immersive and seamless user interaction. This project not only reflects my growing expertise but also invites fellow developers and AI enthusiasts to explore, collaborate, and contribute to the ongoing evolution of AI-driven conversational interfaces.</p>
+<p align="justify">Welcome to the ChatGPT Clone project repository! This innovative project harnesses the capabilities of the Gemini AI API to replicate the core features of an AI-based conversational assistant, delivering an interactive and responsive chat experience. Designed to simulate real conversational intelligence, this clone enables personalized, dynamic responses in real time, making it an ideal starting point for exploring the potential of AI-powered chatbots. Whether for experimenting with conversational flows or building out new AI-driven applications, this project showcases the fundamentals of AI communication in an accessible and practical way.</p>
+<h2 align="left">Tech Stack</h2>
+
+| HTML  | CSS  | JavaScript  | Tailwind | Vite  |
+|-------|------|-------------|----------|-------|
+| <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="HTML" width="65"/> | <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="CSS" width="65"/> | <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" width="65"/> | <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind CSS" width="65"/> | <img src="https://vitejs.dev/logo.svg" alt="Vite" width="65"/> |
+
