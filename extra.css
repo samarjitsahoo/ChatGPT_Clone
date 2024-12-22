@@ -1,328 +1,291 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
 }
+
 textarea {
-    border-radius: 3rem;
-    background-color: transparent;
-    border: 2px solid white;
-    width: 50vw;
+  border-radius: 3rem;
+  background-color: transparent;
+  border: 2px solid white;
+  width: 50vw;
 }
+
 form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #chat-container {
-    padding: 10px 25%;
+  padding: 10px 25%;
 }
+
 .fixed-bottom {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    background: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background: white;
 }
-button img{
-    border: 2px solid white;
-    opacity: 0.5;
+
+button img {
+  border: 2px solid white;
+  opacity: 0.5;
+  margin: auto;
+}
+
+@media only screen and (max-width: 426px) {
+  body {
+    font-size: small;
+  }
+  #second-main img {
+    max-width: 2rem;
+    max-height: 2rem;
+  }
+  #chat-container {
+    padding: 10px 10%;
+    margin-bottom: 15%;
+  }
+  #first-main img {
+    border-radius: 10px;
+    width: 45px;
+    height: auto;
+  }
+  textarea {
+    width: 60vw;
+  }
+  button {
+    left: 4px;
+    height: 36px;
+  }
+  #second-main #chat-form button img {
+    width: 24px;
+    height: auto;
+  }
+  button img {
     margin: auto;
-    
+  }
 }
 
-/* Media Queries */
-
-@media only screen and (max-width:426px) {
-    body {
-        font-size: small;
-    }
-
-    #second-main img {
-        max-width: 2rem;
-        max-height: 2rem;
-    }
-    #chat-container {
-        padding: 10px 10%;
-        margin-bottom: 15%;
-    }
-    #first-main img{
-        border-radius: 10px;
-        width: 45px;
-        height: auto;
-    }
-    
-    textarea {
-        width: 60vw;
-    }
-    button {
-        left: 4px;
-        height: 36px;
-    }
-    #second-main #chat-form button img {
-        width: 24px;
-        height: auto;
-      }
-    button img{
-        margin: auto;
-    }
+@media only screen and (min-width: 375px) and (max-width: 426px) {
+  button img {
+    margin: auto;
+    position: relative;
+    left: 5px;
+  }
+  #chat-container {
+    margin-bottom: 15%;
+  }
 }
 
-@media only screen and (min-width:375px) and (max-width:426px) {
-    button img {
-        margin: auto;
-        position: relative;
-        left: 5px;
-    }
-    #chat-container {
-        margin-bottom: 15%;
-    }
+@media only screen and (min-width: 426px) and (max-width: 521px) {
+  body {
+    font-size: small;
+  }
+
+  #second-main img {
+    max-width: 2rem;
+    max-height: 2rem;
+  }
+  #first-main img {
+    border-radius: 10px;
+    width: 50px;
+    height: auto;
+  }
+  #redirectButton {
+    font-size: medium;
+  }
+  #chat-container {
+    padding: 10px 10%;
+    margin-bottom: 15%;
+  }
+  textarea {
+    width: 60vw;
+  }
+  button {
+    height: 36px;
+  }
+  #second-main #chat-form button img {
+    width: 24px;
+    height: auto;
+  }
+  button img {
+    margin: auto;
+    position: relative;
+    left: 3px;
+  }
 }
 
-@media only screen and (min-width:426px) and (max-width:521px) {
-    body {
-        font-size: small;
-    }
-
-    #second-main img {
-        max-width: 2rem;
-        max-height: 2rem;
-    }
-    #first-main img{
-        border-radius: 10px;
-        width: 50px;
-        height: auto;
-    }
-    #redirectButton{
-        font-size: medium;
-    }
-
-    #chat-container {
-        padding: 10px 10%;
-        margin-bottom: 15%;
-    }
-
-
-    textarea {
-        width: 60vw;
-    }
-
-    button {
-        height: 36px;
-
-    }
-    #second-main #chat-form button img {
-        width: 24px;
-        height: auto;
-      }
-
-    button img {
-        margin: auto;
-        position: relative;
-        left: 3px;
-
-    }
-
+@media only screen and (min-width: 521px) and (max-width: 769px) {
+  body {
+    font-size: small;
+  }
+  #second-main img {
+    max-width: 2rem;
+    max-height: 2rem;
+  }
+  #first-main img {
+    border-radius: 13px;
+    width: 55px;
+    height: auto;
+  }
+  #first-main #redirectButton {
+    height: 2rem;
+    font-size: medium;
+  }
+  #chat-container {
+    padding: 10px 10%;
+    margin-bottom: 10%;
+  }
+  #first-main #redirectButton {
+    height: 2.5rem;
+    font-size: x-large;
+  }
+  textarea {
+    width: 60vw;
+  }
+  button img {
+    margin: auto;
+    position: relative;
+    left: 3px;
+  }
 }
 
-@media only screen and (min-width:521px) and (max-width:769px) {
-    body {
-        font-size: small;
-    }
-
-    #second-main img {
-        max-width: 2rem;
-        max-height: 2rem;
-    }
-    #first-main img{
-        border-radius: 13px;
-        width: 55px;
-        height: auto;
-    }
-    #first-main #redirectButton{
-        height: 2rem;
-        font-size: medium;
-    }
-
-    #chat-container {
-        padding: 10px 10%;
-        margin-bottom: 10%;
-
-    }
-    #first-main #redirectButton {
-        height: 2.5rem;
-        font-size: x-large;
-    }
-    
-   
-    
-
-    textarea {
-        width: 60vw;
-    }
-
-    
-
-    button img {
-        margin: auto;
-        position: relative;
-        left: 3px;
-
-    }
-
+@media only screen and (min-width: 769px) and (max-width: 1540px) {
+  #second-main img {
+    max-width: 2rem;
+    max-height: 2rem;
+  }
+  #first-main img {
+    border-radius: 15px;
+    width: 55px;
+    height: auto;
+  }
+  #first-main #redirectButton {
+    height: 2rem;
+    font-size: medium;
+  }
+  #chat-container {
+    padding: 10px 20%;
+    margin-bottom: 7%;
+  }
+  #first-main #redirectButton {
+    height: 2.5rem;
+    font-size: x-large;
+  }
+  button img {
+    margin: auto;
+    position: relative;
+    left: 3px;
+  }
 }
 
-@media only screen and (min-width:769px) and (max-width:1540px){
-    
-
-    #second-main img {
-        max-width: 2rem;
-        max-height: 2rem;
-    }
-
-    #first-main img{
-        border-radius: 15px;
-        width: 55px;
-        height: auto;
-    }
-    #first-main #redirectButton{
-        height: 2rem;
-        font-size: medium;
-    }
-
-    #chat-container {
-        padding: 10px 20%;
-        margin-bottom: 7%;
-    }
-    #first-main #redirectButton {
-        height: 2.5rem;
-        font-size: x-large;
-    }
-    button img {
-        margin: auto;
-        position: relative;
-        left: 3px;
-
-    }
-
+@media only screen and (min-width: 1540px) {
+  #first-main img {
+    border-radius: 20px;
+    width: 120px;
+    height: auto;
+  }
+  #second-main img {
+    max-width: 4rem;
+    max-height: 4rem;
+  }
+  #first-main #redirectButton {
+    width: 10rem;
+    height: 3rem;
+  }
+  body {
+    font-size: x-large;
+  }
 }
-@media only screen and (min-width:1540px){
-    #first-main img{
-        border-radius: 20px;
-        width: 120px;
-        height: auto;
-    }
-    #second-main img {
-        max-width: 4rem;
-        max-height: 4rem;
-    }
-    #first-main #redirectButton{
-        width: 10rem;
-        height: 3rem;
-    }
-    body {
-        font-size: x-large;
-    }
-}
+
 body,
-    html {
-      height: 100%;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-    }
-
-    h1 {
-      font-size: 300%;
-      color: black;
-    }
-
-    #redirectButton {
-      font-size: 110%;
-      width: 150px;
-      border-radius: 10rem;
-      border: 2px solid black;
-      color: black;
-    }
-    #redirectButton:hover{
-      background-color: rgb(215, 223, 231);
-    }
-
-    .first {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      flex: 1;
-    }
-
-    .text-container {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .button-container {
-      position: fixed;
-      bottom: 20px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
-
-    /* Additional CSS to ensure chat messages start from the top */
-    .second {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .chat-container {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      overflow-y: auto;
-      padding: 2rem;
-    }
-
-    .form-container {
-      display: flex;
-      align-items: center;
-      padding: 1rem;
-      background-color: white;
-      
-    }
-
-    #prompt {
-      flex: 1;
-      padding: 0.5rem;
-      margin-right: 1rem;
-      border: 1px solid black;
-      border-radius: 0.5rem;
-      background-color: white;
-      color: black;
-    }
-
-    #chat-form button {
-      background-color: white;
-      border:1px solid black;
-      border-radius: 0.5rem;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-    }
-
-    #chat-form button img {
-      width: 30px;
-      height: auto;
-    }
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-size: 300%;
+  color: black;
+}
+#redirectButton {
+  font-size: 110%;
+  width: 150px;
+  border-radius: 10rem;
+  border: 2px solid black;
+  color: black;
+}
+#redirectButton:hover {
+  background-color: rgb(215, 223, 231);
+}
+.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.text-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button-container {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.second {
+  display: flex;
+  flex-direction: column;
+}
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 2rem;
+}
+.form-container {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: white;
+}
+#prompt {
+  flex: 1;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  background-color: white;
+  color: black;
+}
+#chat-form button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+#chat-form button img {
+  width: 30px;
+  height: auto;
+}
