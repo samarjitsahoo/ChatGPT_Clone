@@ -8,12 +8,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: aliceblue;
+    background-color: white;
 }
 textarea {
     border-radius: 3rem;
     background-color: transparent;
-    border: 2px solid aliceblue;
+    border: 2px solid white;
     width: 50vw;
 }
 form {
@@ -32,10 +32,10 @@ form {
     width: 100%;
     padding: 10px;
     text-align: center;
-    background: aliceblue;
+    background: white;
 }
 button img{
-    border: 2px solid aliceblue;
+    border: 2px solid white;
     opacity: 0.5;
     margin: auto;
     
@@ -255,7 +255,7 @@ body,
       color: black;
     }
     #redirectButton:hover{
-      background-color: rgb(172, 213, 250);
+      background-color: rgb(215, 223, 231);
     }
 
     .first {
@@ -300,7 +300,7 @@ body,
       display: flex;
       align-items: center;
       padding: 1rem;
-      background-color: aliceblue;
+      background-color: white;
       
     }
 
@@ -310,12 +310,12 @@ body,
       margin-right: 1rem;
       border: 1px solid black;
       border-radius: 0.5rem;
-      background-color: aliceblue;
+      background-color: white;
       color: black;
     }
 
     #chat-form button {
-      background-color: aliceblue;
+      background-color: white;
       border:1px solid black;
       border-radius: 0.5rem;
       padding: 0.5rem 1rem;
