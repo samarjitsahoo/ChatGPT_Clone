@@ -12,109 +12,6 @@
   <link rel="shortcut icon" href="/chatGPT.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="extra.css">
-  <style>
-    body,
-    html {
-      height: 100%;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-    }
-
-    h1 {
-      font-size: 300%;
-      color: aliceblue;
-    }
-
-    #redirectButton {
-      font-size: 110%;
-      width: 150px;
-      border-radius: 10rem;
-      border: 2px solid aliceblue;
-      color: aliceblue;
-    }
-    #redirectButton:hover{
-      background-color: #19191c;
-    }
-    #version p{
-      font-size: 0.7rem;
-      color: aliceblue;
-    }
-    #mistakes {
-      font-size: 0.7rem;
-      color: aliceblue;
-
-    }
-
-    .first {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      flex: 1;
-    }
-
-    .text-container {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .button-container {
-      position: fixed;
-      bottom: 20px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
-
-    /* Additional CSS to ensure chat messages start from the top */
-    .second {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .chat-container {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      overflow-y: auto;
-      padding: 2rem;
-    }
-
-    .form-container {
-      display: flex;
-      align-items: center;
-      padding: 1rem;
-      background-color: #19191c;
-      
-    }
-
-    #prompt {
-      flex: 1;
-      padding: 0.5rem;
-      margin-right: 1rem;
-      border: 1px solid #333;
-      border-radius: 0.5rem;
-      background-color: #222;
-      color: white;
-    }
-
-    #chat-form button {
-      background-color: #333;
-      border: none;
-      border-radius: 0.5rem;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-    }
-
-    #chat-form button img {
-      width: 30px;
-      height: auto;
-    }
-  </style>
 </head>
 
 <body>
@@ -125,9 +22,6 @@
     </div>
     <div class="button-container">
       <button id="redirectButton">Get Started</button>
-    </div>
-    <div id="version">
-      <p>SamarGPT Beta version: 1.2.2</p>
     </div>
   </main>
   <main id="second-main" class="second w-full min-h-[calc(100vh-1rem)] max-h-[calc(100vh-1rem)] flex flex-col"

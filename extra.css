@@ -8,12 +8,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #202025;
+    background-color: aliceblue;
 }
 textarea {
     border-radius: 3rem;
     background-color: transparent;
-    border: 2px solid gray;
+    border: 2px solid aliceblue;
     width: 50vw;
 }
 form {
@@ -32,10 +32,10 @@ form {
     width: 100%;
     padding: 10px;
     text-align: center;
-    background: #202025;
+    background: aliceblue;
 }
 button img{
-    border: 2px solid #202025;
+    border: 2px solid aliceblue;
     opacity: 0.5;
     margin: auto;
     
@@ -234,3 +234,95 @@ button img{
         font-size: x-large;
     }
 }
+body,
+    html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 300%;
+      color: black;
+    }
+
+    #redirectButton {
+      font-size: 110%;
+      width: 150px;
+      border-radius: 10rem;
+      border: 2px solid black;
+      color: black;
+    }
+    #redirectButton:hover{
+      background-color: rgb(172, 213, 250);
+    }
+
+    .first {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+    }
+
+    .text-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button-container {
+      position: fixed;
+      bottom: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Additional CSS to ensure chat messages start from the top */
+    .second {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .chat-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      padding: 2rem;
+    }
+
+    .form-container {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      background-color: aliceblue;
+      
+    }
+
+    #prompt {
+      flex: 1;
+      padding: 0.5rem;
+      margin-right: 1rem;
+      border: 1px solid black;
+      border-radius: 0.5rem;
+      background-color: aliceblue;
+      color: black;
+    }
+
+    #chat-form button {
+      background-color: aliceblue;
+      border:1px solid black;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+
+    #chat-form button img {
+      width: 30px;
+      height: auto;
+    }

@@ -17,9 +17,7 @@ document.getElementById('redirectButton').addEventListener('click', function () 
   document.getElementById('second-main').style.display = 'flex';
 });
 
-// Initialize the model
 const genAI = new GoogleGenerativeAI(`${import.meta.env.VITE_API_KEY}`);
-
 const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
 let history = [];
@@ -38,7 +36,6 @@ async function getResponse(prompt) {
   }
 }
 
-// User chat div
 export const userDiv = (data) => {
   return `
   <!-- User Chat -->
@@ -48,20 +45,19 @@ export const userDiv = (data) => {
       alt="user icon"
       class="w-10 h-10 rounded-full"
     />
-    <p class="text-white p-1"><span class="font-bold">You</span><br>
+    <p class="text-black p-1"><span class="font-bold">You</span><br>
       ${data}
     </p>
   </div>
   `;
 };
 
-// AI Chat div with id for dynamic updates and cursor
 export const aiDiv = (data, id) => {
   return `
   <!-- AI Chat -->
   <div id="ai-response-container-${id}" class="flex gap-2 justify-center items-start w-full overflow-hidden whitespace-normal break-words">
     <img src="chatGPT.png" alt="user icon" class="w-10 h-10 rounded-full" />
-    <div id="ai-response-${id}" class="text-white p-1">
+    <div id="ai-response-${id}" class="text-black p-1">
         <span class="font-bold">SamarGPT</span><br>
         <span id="ai-response-text-${id}">${data}</span>
         <span id="cursor-${id}" class="circle-cursor"></span>
@@ -70,13 +66,11 @@ export const aiDiv = (data, id) => {
   `;
 };
 
-// Function to scroll to the bottom of the chat container
 function scrollToBottom() {
   const chatArea = document.getElementById("chat-container");
   chatArea.scrollTop = chatArea.scrollHeight;
 }
 
-// Function to append each character with a delay and update cursor position
 function appendCharacterByCharacter(text, id) {
   const aiResponseContainer = document.getElementById(`ai-response-text-${id}`);
   const cursor = document.getElementById(`cursor-${id}`);
@@ -86,17 +80,15 @@ function appendCharacterByCharacter(text, id) {
     if (index < text.length) {
       aiResponseContainer.innerHTML += text[index];
       index++;
-      scrollToBottom(); // Scroll to bottom as each character is added
-      setTimeout(appendNextCharacter, 9); // 9ms delay between characters
+      scrollToBottom();
+      setTimeout(appendNextCharacter, 9);
     } else {
-      // Render markdown after the complete text is displayed
       let md_text = md().render(aiResponseContainer.innerHTML);
       aiResponseContainer.innerHTML = md_text;
-      cursor.style.display = 'none'; // Hide the cursor after typing is complete
-      scrollToBottom(); // Ensure scroll at the end of typing
+      cursor.style.display = 'none';
+      scrollToBottom();
     }
   }
-
   appendNextCharacter();
 }
 
@@ -113,25 +105,19 @@ async function handleSubmit(event) {
 
   console.log("user message", prompt);
 
-  // Add the user prompt to the chat area
   chatArea.innerHTML += userDiv(prompt);
   userMessage.value = "";
 
-  // Create a unique ID for the AI response
   const uniqueId = history.length;
 
-  // Append an empty AI response container with the unique ID and cursor
   chatArea.innerHTML += aiDiv("", uniqueId);
 
-  // Scroll to the bottom of the chat area
   scrollToBottom();
 
   try {
-    // Fetch the AI response and start appending characters
     const aiResponse = await getResponse(prompt);
     appendCharacterByCharacter(aiResponse, uniqueId);
 
-    // Update chat history with user and AI responses
     let newUserRole = {
       role: "user",
       parts: [{ text: prompt }],
@@ -147,13 +133,11 @@ async function handleSubmit(event) {
     console.log(history);
   } catch (error) {
     console.error(error);
-    // Display custom error message in the AI response container character by character
     const errorMessage = "An Error occurred. Please reload page and try again later.";
     appendCharacterByCharacter(errorMessage, uniqueId);
   }
 }
 
-// CSS for the circle cursor
 const style = document.createElement('style');
 style.innerHTML = `
   .circle-cursor {
@@ -162,7 +146,7 @@ style.innerHTML = `
     height: 10px;
     margin-left: 5px;
     border-radius: 50%;
-    background-color: white;
+    background-color: black;
     animation: swell 1s infinite;
   }
 
